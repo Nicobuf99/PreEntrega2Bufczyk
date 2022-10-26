@@ -1,0 +1,393 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    background-image: url(https://img.freepik.com/vector-premium/fondo-copa-mundial-futbol-banner-campeonato-futbol-2022-qatar_29865-3055.jpg?w=996)
+}
+
+h1,h2,p,
+footer, 
+section, 
+ul{
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+header{
+    background-image: url(../imagenes/copadelmundo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.imagen-navbar{
+    width: 80px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.li-a-navbar{
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    margin: 0 20px;
+    transition: all 0.7s;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.li-a-navbar:hover{
+    background-color: rgb(138,21,56);
+    transform: scale(1.1);
+    color: white;
+    border: 3px solid white
+}
+
+.active {
+    background-color: rgb(138, 21, 56);
+    color: white !important;
+    border: 2px solid white;
+}
+
+.boton-navbar-responsive{
+    background-color: white;
+    border: 1px solid black;
+}
+
+.imagenes-countdown{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3px;
+    margin: 40px;
+}
+
+.h1-index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imagenes-countdown img{
+    border: 2px solid white;
+}
+
+h1{
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#demo{
+    text-decoration: none;
+}
+
+.tablas-index{
+    color: white;
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+}
+
+.tablas-index > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.tablas-index div .ganadores-titulo, .goleadores-titulo{
+    margin-bottom: 20px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+th, tr, td{
+    border: 1px solid black;
+    color: rgb(138, 21, 56);
+}
+
+.ganadoresindex, .goleadoresindex{
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.ganadoresindex a, .goleadoresindex a{
+    color: rgb(138, 21, 56);
+    text-decoration: none;
+    font-size: large;
+    font-weight: 400;
+}
+
+.cancion-mundial-section h3{
+    display: flex;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.cancion-mundial-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+   
+   
+.titulo-fixture{
+    margin: 10px;
+}
+
+.fixture-grupos {   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 10px;
+}
+
+.partidos-grupos{
+    background-color: rgb(138, 21, 56); 
+}
+
+.fixture-grupos .partidos-grupos {
+    width: 45%;
+    border: 4px solid white;
+    margin: 10px 0px;
+    transition: all 1s;
+    color: white;
+}
+
+.fixture-grupos .partidos-grupos h2{
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.fixture-grupos .partidos-grupos li {
+    list-style: square;
+}
+
+.partidos-grupos:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: rgb(138, 21, 56);
+}
+
+.fase-final-fixture{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.fase-final-fixture h2{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.fase-final-fixture img{
+    border: 4px solid white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    transition: all 1s;
+}
+
+.fase-final-fixture img:hover{
+    transform: scale(1.1);
+}
+
+.titulo-estadios{
+    margin-top: 20px;
+}
+
+.estadios-mundial{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.estadios-mundial div{
+    background-color: rgb(138, 21, 56);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    justify-content: center;
+    margin: 1% 2%;
+    border: white 2px solid;
+    padding: 1%;
+    color: white;
+    width: 40%;
+}    
+
+.estadios-mundial div h2{
+    font-style: italic;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.estadios-mundial div img{
+    width: 80%;
+}
+
+.fotos-estadios{
+    margin-bottom: 10px;
+}
+
+.fotos-estadios:hover{
+    animation: cambioDeTamanio 2s;
+}
+
+@keyframes cambioDeTamanio {
+    50%{
+        width: 95%;
+        border: 1px solid white;
+    }
+    50%{
+        transform: scale(1);
+        border: 1px solid white;
+    }
+}
+
+.prediccion-texto, .formulario-contactanos{
+    color: white;
+    margin: 10px
+}
+
+.prediccion-anchor{
+    color: white;
+    margin: 0px 5px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.prediccion-anchor:hover{
+    color: white;
+    font-weight: bolder;
+}
+
+.camiseta-festejo{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    text-align: center;
+}
+
+.camiseta-festejo img{
+    border: 2px solid white;
+}
+
+.contactanos-titulo{
+    margin-top: 10px;
+    border: 0px;
+}
+
+.formulario-contactanos{
+    margin-bottom: 40px;
+}
+
+.futer{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.futer ul li{
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-decoration: none;
+    list-style: none;
+    margin: 25px;
+    transition: all 1s;
+}
+
+.futer li :hover{
+    background-color: rgb(138, 21, 56);
+    color:white;
+    border: 3px solid white;
+    }
+
+.futer ul li a{
+    color:black;
+    background-color: white;
+    text-decoration: none;
+    font-style: italic;
+    border: black 3px solid;
+    padding: 10px;  
+    font-weight: bold;
+}
+
+.futer ul :hover{
+    transform: scale(1.1);
+} 
+
+@media screen and (max-width: 600px){
+    .li-a-navbar:hover{
+        transform: scale(1.02);
+    }
+    .li-nav-css{
+        margin: 5px;
+        text-align: center;
+        width: 95%;
+    }
+    .imagenes-countdown{
+        flex-direction: column;
+        align-items: center;
+    }
+    .argentina-campeon, .francia-campeon{
+        width: 90%;
+    }
+    .francia-campeon{
+        margin-top: 10px;
+    }
+
+    .argentina-campeon{
+        margin-bottom: 10px;
+    }
+    .tablas-index{
+        display: flex;
+        flex-direction: column;
+    }
+    .ganadores-titulo, .goleadores-titulo{
+        text-align: center;
+    }
+    .ganadoresindex{
+        margin-bottom: 10px;
+    }
+    .fixture-grupos, .estadios-mundial, .camiseta-festejo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .fixture-grupos .partidos-grupos{
+        width: 90%;
+    }
+    .partidos-grupos:hover{
+        transform: scale(1.05);
+    }
+    .fase-final-fixture img{
+        width: 90%;
+    }
+    .estadios-mundial div{
+        width: 90%;
+    }
+    .estadios-mundial .fotos-estadios{
+        width: 90%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .prediccion-texto, .formulario-contactanos{
+        text-align: justify;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .camiseta-festejo img{
+        width: 90%;
+        margin: 5px;
+    }
+}
