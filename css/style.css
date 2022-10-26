@@ -222,7 +222,8 @@ th, tr, td{
     padding: 1%;
     color: white;
     width: 40%;
-}    
+    transition: all 3s;
+}
 
 .estadios-mundial div h2{
     font-style: italic;
@@ -279,6 +280,12 @@ th, tr, td{
 
 .camiseta-festejo img{
     border: 2px solid white;
+    transition: all 1s;
+}
+
+.camiseta-festejo img:hover{
+    box-shadow: 10px 5px 5px black;
+    border: 2px solid black;
 }
 
 .contactanos-titulo{
